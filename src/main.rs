@@ -83,6 +83,10 @@ fn main() {
             String::new()
         };
 
+        js! {
+            document.getElementById("output").value = "";
+        }
+
         let _ = Engine::build()
             .with_io(DemoIo::new())
             .finish()
