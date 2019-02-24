@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<h1>Forge</h1>
+		<p>
+			Forge is a dynamically-typed language written in Rust.
+			It is inspired by JavaScript, Rust, and Python.
+			In the future, you'll be able to use Forge as a general-purpose lightweight scripting language in your applications.
+		</p>
+		<div id="forge-ide" class="ide">
+			<button id="execute" class="exec">Execute</button>
+			<br>
+			<div class="sidebyside">
+				<textarea id="input" class="code input lined" onkeydown="if(event.keyCode===9){var v=this.value,s=this.selectionStart,e=this.selectionEnd;this.value=v.substring(0, s)+'\t'+v.substring(e);this.selectionStart=this.selectionEnd=s+1;return false;}"></textarea>
+				<textarea id="output" class="code output"></textarea>
+			</div>
+		</div>
+	</body>
+</html>

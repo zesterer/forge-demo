@@ -1,0 +1,9 @@
+[package]
+name = "forge-demo"
+version = "0.1.0"
+authors = ["Joshua Barretto <joshua.s.barretto@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+stdweb = "0.4"
+forge = { git = "https://github.com/zesterer/forge", branch = "master" }
