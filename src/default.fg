@@ -1,24 +1,10 @@
 # A function to greet the user
 var say_hello = |name| {
 	print "Hello, " + name + "!";
-	print "How are you?";
 };
 
 # Say hello to the user
 var name = input "What is your name? ";
 say_hello(name);
-
-var running = true;
-while running {
-	var next_input = input "How are you feeling? ";
-
-	# Only accept the input 'happy'
-	if next_input == "happy" {
-		print "Amazing!";
-		running = false;
-	} else {
-		print name + ", you aren't allowed to be anything but happy!";
-	}
-}
 
 print "Goodbye!";
