@@ -1,10 +1,17 @@
-# A function to greet the user
-var say_hello = |name| {
-	print "Hello, " + name + "!";
+# A function to square numbers
+var square = |x| {
+	return x * x;
 };
 
-# Say hello to the user
-var name = input "What is your name? ";
-say_hello(name);
+var n = input "How many squares? ";
 
-print "Goodbye!";
+# Create a list of squares
+var squares = [];
+for x in 1..n + 1 {
+	squares = squares + square(x);
+}
+
+# Iterate and print squares
+for square in squares {
+	print square;
+}
